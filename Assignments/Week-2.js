@@ -7,7 +7,9 @@ console.log(
   numberOfToppings,
   typeof numberOfToppings
 );
-console.log(`"${pizzaPlace} is a wonderful way to get dinner."`);
+console.log(
+  `"${pizzaPlace} is a wonderful way to get dinner with ${numberOfToppings} toppings."`
+);
 numberOfToppings < 10
   ? console.log("Quality, not quantity.")
-  : console.log("A whole lot of pizza.");
+  : console.log(`"Thats a whole lot of pizza."`);
