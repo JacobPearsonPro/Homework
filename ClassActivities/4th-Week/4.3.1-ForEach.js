@@ -234,7 +234,7 @@ const data = [
 ];
 
 // using forEach, print a list of cities from the data
-// data.forEach(user => console.log(user.address.city))
+data.forEach(user => console.log(user.address.city))
 
 // create an array of latitude and longitude coordinate pairs
 const coords = [];
