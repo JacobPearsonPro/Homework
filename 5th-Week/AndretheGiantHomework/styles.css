@@ -1,0 +1,42 @@
+html {
+    background-color: antiquewhite;
+  }
+  
+  body {
+    text-align: start;
+    font-size: 18px;
+    flex-direction: row;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  
+  img {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  div {
+    border: 2px solid burlywood;
+    margin: 2%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  #introPic {
+  }
+  
+  #bio {
+
+  }
+  #bio > li {
+    padding: 2px;
+  }
+  
+  #proCareer {
+    width: auto;
+  }
