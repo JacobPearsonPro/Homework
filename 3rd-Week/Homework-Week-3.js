@@ -9,7 +9,8 @@ function greetCustomer(){
 }
 
 function getPizzaOrder(size, crust, ...toppings){
-    console.log(`${size} ${crust} pizza with ${toppings} coming right up!`)
+    toppings==false ? toppings = "cheese" : null
+    console.log(`${size} ${crust} ${toppings} pizza coming right up!`)
     return [size, crust, toppings]
 }
 
@@ -27,11 +28,12 @@ function servePizza({
     Crust: crust,
     Toppings: toppings
     }){
-        console.log(`"Order up! Here's your ${size} ${crust} crust pizza with ${toppings} ... Enjoy!"`)
+        console.log(`"Order up! Here's your ${size} ${crust} ${toppings} pizza ... Enjoy!"`)
     return {
         Size: size,
         Crust: crust,
         Toppings: toppings
         }
     }
-servePizza(preparePizza(getPizzaOrder("large", "thick", "Pepperoni", "Salami", "Sausage", "Mushrooms")))
+    greetCustomer()
+servePizza(preparePizza(getPizzaOrder("large", "thick")))
