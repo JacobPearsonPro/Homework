@@ -232,8 +232,13 @@ const userDetails = [
   }
 ]
 
-const phoneNumbers = userDetails.filter(element => element.phone > 0)
+phoneNumbers = []
+
+userDetails.filter(element => phoneNumbers.push(element.phone))
 console.log(phoneNumbers)
+
+//const phoneNumbers = userDetails.filter(element => element.phone > 0)
+//console.log(phoneNumbers)
 
 
 // function phoneNumbers(users){
